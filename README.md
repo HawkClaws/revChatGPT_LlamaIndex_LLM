@@ -1,6 +1,6 @@
 # revChatGPT_LlamaIndex_LLM
 
-`acheong08/ChatGPT`を利用したLlamaIndexのCustomLLMの実装
+`acheong08/ChatGPT`を利用したLlamaIndexのCustomLLMの実装  
 ハイスペックPC不要、無課金で`LlamaIndex`が楽しめます
 
 ## 事前準備
@@ -14,6 +14,7 @@
 
 
 基本的には、下記でインストールすればOK
+
 `pip install llama-index revChatGPT`
 
 ### コード上での設定
@@ -32,7 +33,7 @@ ACCESS_TOKEN = "XXXXXXXXX"
 
 ### データセット
 
-LlamaIndexに読み込ませるデータは`dataset.txt`になっています。
+LlamaIndexに読み込ませるデータは`dataset.txt`になっています  
 内容は青空文庫の「坊っちゃん」になっていますが、必要に応じて変更してください
 
 ## 使い方
