@@ -24,6 +24,7 @@
 ```python
 
 # ChatGPTから502エラーが返る場合は下記をコメントアウト
+# from os import environ
 # environ['CHATGPT_BASE_URL'] = 'https://ai.fakeopen.com/api/'
 
 # ChatGPTのアクセストークンの入力　詳細は https://github.com/acheong08/ChatGPT#--access-token を参照

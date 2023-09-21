@@ -1,9 +1,11 @@
 # ChatGPTから502エラーが返る場合は下記をコメントアウト
+# from os import environ
 # environ['CHATGPT_BASE_URL'] = 'https://ai.fakeopen.com/api/'
 
 # ChatGPTのアクセストークンの入力　詳細は https://github.com/acheong08/ChatGPT#--access-token を参照
 ACCESS_TOKEN = "XXXXXXXXX"
 
+from datetime import datetime
 from llama_index.llms.base import llm_completion_callback
 from llama_index.llms import (
     CustomLLM,
@@ -75,6 +77,9 @@ documents = SimpleDirectoryReader(
 index = SummaryIndex.from_documents(documents, service_context=service_context)
 
 # Query and print response
+print(f"{str(datetime.now())} : Start Query")
 query_engine = index.as_query_engine()
 response = query_engine.query("主人公の家族構成は？")
 print(response)
+print(f"{str(datetime.now())} : End Query")
+
